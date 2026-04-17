@@ -8,6 +8,7 @@ export default defineConfig(({ mode }) => {
   return {
     plugins: [react(), tailwindcss()],
     define: {},
+    base: "/Portfolio",
     resolve: {
       alias: {
         '@': path.resolve(__dirname, '.'),
