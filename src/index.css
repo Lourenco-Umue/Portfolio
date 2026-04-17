@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Segoe UI Variable", "Segoe UI", system-ui, Arial, sans-serif;
+  
+  --color-primary: #007bff;
+  --color-primary-dark: #0056b3;
+  --color-bg: #0d1117;
+  --color-surface: #161b22;
+  --color-border: #30363d;
+  --color-text-main: #c9d1d9;
+  --color-text-bright: #f0f6fc;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-bg text-text-main antialiased selection:bg-primary/30;
+    font-family: var(--font-sans);
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-bold text-text-bright tracking-tight;
+  }
+}
+
+@layer utilities {
+  .container-custom {
+    @apply max-w-6xl mx-auto px-6;
+  }
+
+  .nav-link {
+    @apply text-sm font-medium hover:text-primary transition-colors cursor-pointer;
+  }
+
+  .section-padding {
+    @apply py-20 md:py-32;
+  }
+
+  .card {
+    @apply bg-surface border border-border rounded-xl p-6 transition-all duration-300 hover:border-primary/50 hover:-translate-y-1;
+  }
+
+  .btn-primary {
+    @apply bg-primary hover:bg-primary-dark text-white font-bold py-3 px-8 rounded-lg transition-all duration-300 inline-block;
+  }
+
+  .btn-outline {
+    @apply border border-border hover:border-primary hover:text-primary text-text-main font-bold py-3 px-8 rounded-lg transition-all duration-300 inline-block;
+  }
+}
+
+
+
+
