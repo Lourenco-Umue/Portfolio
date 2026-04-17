@@ -1,20 +1,9 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+🌐 Sobre o meu portfólio
 
-# Run and deploy your AI Studio app
+Este é o meu portfólio pessoal, um espaço dedicado a apresentar os meus projetos, habilidades e experiências na área de desenvolvimento web e programação. Aqui encontrarás uma seleção dos trabalhos que desenvolvi, demonstrando a minha evolução e paixão por tecnologia.
 
-This contains everything you need to run your app locally.
+O objetivo deste site é mostrar não apenas o que sei fazer, mas também como aplico o meu conhecimento na criação de soluções modernas, funcionais e com foco na experiência do utilizador.
 
-View your app in AI Studio: https://ai.studio/apps/462d4a35-c14f-4171-b427-604b019fa003
+Além dos projetos, este portfólio também inclui informações sobre mim, os meus serviços e formas de contacto, permitindo uma ligação direta para possíveis colaborações, oportunidades profissionais ou projetos freelance.
 
-## Run Locally
-
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+Este site foi desenvolvido com tecnologias modernas como React, TypeScript e Tailwind CSS, garantindo um design responsivo, limpo e interativo.
