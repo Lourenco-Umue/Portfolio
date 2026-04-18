@@ -3,13 +3,33 @@
 @theme {
   --font-sans: "Segoe UI Variable", "Segoe UI", system-ui, Arial, sans-serif;
   
-  --color-primary: #007bff;
-  --color-primary-dark: #0056b3;
-  --color-bg: #0d1117;
-  --color-surface: #161b22;
-  --color-border: #30363d;
-  --color-text-main: #c9d1d9;
-  --color-text-bright: #f0f6fc;
+  --color-primary: var(--primary);
+  --color-primary-dark: var(--primary-dark);
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-border: var(--border);
+  --color-text-main: var(--text-main);
+  --color-text-bright: var(--text-bright);
+}
+
+:root {
+  --primary: #007bff;
+  --primary-dark: #0056b3;
+  
+  /* Default Dark Theme (Keeping original) */
+  --bg: #0d1117;
+  --surface: #161b22;
+  --border: #30363d;
+  --text-main: #c9d1d9;
+  --text-bright: #f0f6fc;
+}
+
+:root.light {
+  --bg: #f8fafc;
+  --surface: #ffffff;
+  --border: #e2e8f0;
+  --text-main: #475569;
+  --text-bright: #0f172a;
 }
 
 @layer base {
@@ -18,7 +38,7 @@
   }
   
   body {
-    @apply bg-bg text-text-main antialiased selection:bg-primary/30;
+    @apply bg-bg text-text-main antialiased selection:bg-primary/30 transition-colors duration-300;
     font-family: var(--font-sans);
   }
 

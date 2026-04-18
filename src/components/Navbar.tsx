@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import ThemeToggle from './ThemeToggle';
 
 const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -25,12 +26,15 @@ const Navbar: React.FC = () => {
         <a href="#home" className="text-xl font-bold text-text-bright tracking-tight">
           Lourenço <span className="text-primary">Umue</span>
         </a>
-        <div className="hidden md:flex gap-8">
-          {navLinks.map((link) => (
-            <a key={link.name} href={link.href} className="nav-link">
-              {link.name}
-            </a>
-          ))}
+        <div className="flex items-center gap-6 md:gap-8">
+          <div className="hidden md:flex gap-8">
+            {navLinks.map((link) => (
+              <a key={link.name} href={link.href} className="nav-link">
+                {link.name}
+              </a>
+            ))}
+          </div>
+          <ThemeToggle />
         </div>
       </div>
     </nav>
